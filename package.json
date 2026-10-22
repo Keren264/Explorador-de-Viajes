@@ -1,0 +1,13 @@
+{
+  "name": "proyecto Sistema de gestion bancaria",
+  "version": "0.1.0",
+  "description": "Sistema de gestión bancaria",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Silvia Keren Mercado Nova",
+  "license": "ISC"
+}
