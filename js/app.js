@@ -83,12 +83,12 @@ async function init() {
     </h3>
 
     <p class='text-slate-500'>
-      Verifica tu conexión e intenta nuevamente
+      Verifica tu conexión e intenta de nuevo
     </p>
 
     `;
   }
 }
 
-// INICIALIZAMOS LA APLICACION
+// Seinicia la aplicacion
 init();
