@@ -1,9 +1,6 @@
-// INTERFAZ DE USUARIO
-// Funciones encargadas de actualizar el DOM
 
-// v0.3.0 MOSTRAR ESTADO DE CARGA
 export function mostrarCargando(contenedor) {
-  // v0.3.0 MOSTRAR ESTADO DE CARGA
+  
   contenedor.innerHTML = /*html*/ `
   
   <div class='text-5xl mb-4'>
@@ -45,12 +42,11 @@ export function mostrarError(contenedor) {
     `;
 }
 
-// v0.3.0 ACTUALIZAR CONTADOR
+
 export function actualizarContador(total, elementoContador) {
   elementoContador.textContent = `${total} destinos`;
 }
 
-// v0.3.0 RENDERIZAR DESTINOS
 export function renderPaises(paises, contenedor) {
   // v0.3.0 MOSTRAR MENSAJE SI NO EXISTEN DESTINOS
   if (paises.length === 0) {
@@ -83,7 +79,7 @@ export function renderPaises(paises, contenedor) {
     return;
   }
 
-  // v0.3.0 CREAR TARJETAS VISUALES
+ 
   const tarjetas = paises
     .map((pais) => {
       // v0.3.0 OBTENER INFORMACIÓN DE CADA PAÍS
@@ -93,10 +89,10 @@ export function renderPaises(paises, contenedor) {
       const bandera = pais.flag?.url_png ?? '';
       const codigo = pais.codes?.alpha_3 ?? '';
 
-      // v0.3.0 FORMATEAR POBLACIÓN con tolocalstring
+
       const poblacionFormateada = poblacion.toLocaleString('es-Mx');
 
-      // v0.3.0 CREAR EL HTML DE CADA TARJETA
+      
       return /*html*/ `
     <article class='bg-white
             rounded-xl
@@ -107,7 +103,7 @@ export function renderPaises(paises, contenedor) {
             hover:shadow-md
             transition'>
 
-      <!--BANDERA-->
+      
       <div class='h-48
                 bg-slate-100
                 overflow-hidden'>
@@ -118,7 +114,6 @@ export function renderPaises(paises, contenedor) {
 
       </div>
 
-        <!--v0.3.0 INFORMACIÓN DEL DESTINO -->
       <div class='p-5'>
 
         <div class='flex
@@ -148,7 +143,7 @@ export function renderPaises(paises, contenedor) {
           </span>
         </div>
 
-        <!--v0.3.0 POBLACION-->
+       
         <div class='mb-5'>
           <p class='text-xs text-slate-500'>
             Población 
@@ -160,7 +155,6 @@ export function renderPaises(paises, contenedor) {
           </p>
         </div>
 
-        <!--v0.3.0 ACCIONES-->
         <div class='flex gap-3'>
           <button type='button'
                   data-action='detail'
